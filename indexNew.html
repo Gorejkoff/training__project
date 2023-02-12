@@ -4,7 +4,8 @@
    <title>"YANKI__NEW"</title>
    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
    <meta name="viewport" content="width=device-width" initial-scale=1.0>
-   <link rel="stylesheet" href="css/style.min.css?_v=20230127222925">
+   <link rel="icon" href="img/icon/chery.png" type="image/png">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230212190309">
 </head>
 
 <body>
@@ -33,6 +34,63 @@
             </ul>
          </div>
       </div>
+      <section class="authorization authorization-hiden">
+         <div class="container">
+            <div class="authorization__body">
+               <button class="authorization__close">
+                  <span class="authorization__close-icon1"></span>
+                  <span class="authorization__close-icon2"></span>
+               </button>
+               <div class="authorization__title">Авторизация</div>
+               <form action="#" method="post" name="authorization">
+                  <div class="authorization__form">
+                     <div class="authorization__email authorization__input"><input type="text" placeholder="Ваш e-mail*"></div>
+                     <div class="authorization__password authorization__input"><input type="text" placeholder="Ваш пароль*"></div>
+                     <div class="authorization__action">
+                        <div class="authorization__block">
+                           <span class="authorization__forget"><a href="#" class="authorization__forget-password">Забыли пароль?</a></span>
+                           <span class="authorization__authorization"><a href="#" class="authorization__authorization-account">Нет аккаунта?</a></span>
+                        </div>
+                        <div class="authorization__info">Введены не верные данные.</div>
+                        <div class="authorization__button"><button type="button" class="authorization__button-button button__yanki">Войти</button></div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <section class="registrations registrations-hiden">
+         <div class="container">
+            <div class="registrations__body">
+               <button class="registrations__close">
+                  <span class="registrations__close-icon1"></span>
+                  <span class="registrations__close-icon2"></span>
+               </button>
+               <div class="registrations__title">Регистрация</div>
+               <form action="#" method="post" name="registrations">
+                  <div class="registrations__form">
+                     <div class="registrations__email registrations__input"><input type="text" placeholder="Ваш e-mail*"></div>
+                     <div class="registrations__password registrations__input"><input type="text" placeholder="Ваш пароль*"></div>
+                     <div class="registrations__info">Такой пользователь уже есть.</div>
+                     <div class="registrations__action">
+                        <div class="registrations__button"><button type="button" class="registrations__button-button button__yanki">Продолжить</button></div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <section class="registrationFinisched registrationFinisched-hiden">
+         <div class="registrationFinisched__body">
+            <button class="registrationFinisched__close">
+               <span class="registrationFinisched__close-icon1"></span>
+               <span class="registrationFinisched__close-icon2"></span>
+            </button>
+            <div class="registrationFinisched__title">
+               Регистрация прошла успешно!
+            </div>
+         </div>
+      </section>
       <div class="container">
          <div class="menu">
             <div class="menu__body">
@@ -80,16 +138,18 @@
                   </div>
                   <div class="menu__icon">
                      <ul class="menu__icon-icon">
-                        <li><a class="icon-1 search__open" href="#"></a></li>
-                        <li data-da=".menu__lists,0,767"><a class="icon-2" href="#">
-                              <span class="menu__icon-cabinet">Личный кабинет</span></a></li>
-                        <li><a class="icon-3" href="indexFavorites.html"></a></li>
-                        <li><a class="icon-4" href="indexBasket.html"></a></li>
+                        <li class="menu__icon-search-open"><a class="icon-1 search__open" href="#"></a></li>
+                        <li class="menu__icon-cabinet" data-da=".menu__lists,0,767"><a class="icon-2" href="indexCabinet.html">
+                              <span class="menu__icon-cabinet-text">Личный кабинет</span></a></li>
+                        <li class="menu__icon-favorites"><a class="icon-3" href="indexFavorites.html"></a></li>
+                        <li class="menu__icon-basket"><a class="icon-4" href="indexBasket.html"></a></li>
                      </ul>
                   </div>
                </div>
             </div>
+            <div class="menu__user menu__use-hiden"><span class="menu__user-signature">Пользователь: </span><span class="menu__user-name"></span></div>
          </div>
+
       </div>
    </div>
 </header>
@@ -151,8 +211,8 @@
    <div class="copy">©️ 2021 Yanki. All rights reserved</div>
 </footer>
    </div>
-   <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20230127222925"></script>
-   <script src="js/app.min.js?_v=20230127222925"></script>
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20230212190309"></script>
+   <script src="js/app.min.js?_v=20230212190309"></script>
 </body>
 
 </html>
